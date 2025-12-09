@@ -508,6 +508,51 @@ body {
   box-shadow: 0 10px 40px rgba(74, 155, 159, 0.15);
 }
 
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.cta-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-section h2 {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.cta-section p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.btn-cta {
+  display: inline-block;
+  padding: 18px 50px;
+  background: white;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  background: var(--cream);
+}
+
 /* Footer */
 .footer {
   background: var(--primary);
@@ -535,8 +580,16 @@ body {
     width: 140px;
   }
   
-  .info, .description, .rooms, .breakfast, .map-section {
+  .info, .description, .rooms, .breakfast, .map-section, .cta-section {
     padding: 50px 20px;
+  }
+  
+  .cta-section h2 {
+    font-size: 28px;
+  }
+  
+  .cta-section p {
+    font-size: 16px;
   }
   
   .room-gallery-2 {
@@ -709,20 +762,30 @@ body {
     <h2 data-en="Location" data-ko="숙소 위치">Location</h2>
     <p>Gilitrawangan, Jl. Ikan Tongkol No.RT.07, Gili Indah, Kec. Pemenang, Kabupaten Lombok Utara, Nusa Tenggara Bar. 83352</p>
       
-    <iframe
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.5509457997924!2d116.035902!3d-8.3425738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcde1fe0e0bd4d7:0xfd3d42910a5a609b!2sGili%20Sal%3AEE!5e0!3m2!1sko!2skr!4v1700000000000!5m2!1sko!2skr"
       width="100%"
       height="450"
       style="border:0"
+      allowfullscreen=""
       loading="lazy"
-      allowfullscreen
-      src="https://www.google.com/maps?q=-8.3425738,116.0374613&hl=ko&z=17&output=embed">
+      referrerpolicy="no-referrer-when-downgrade">
     </iframe>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="cta-container">
+    <h2 data-en="Ready for Your Gili Escape?" data-ko="길리에서의 휴식을 준비하셨나요?">Ready for Your Gili Escape?</h2>
+    <p data-en="Book your stay and experience the tranquility of island life" data-ko="지금 예약하고 섬에서의 평화로운 시간을 경험하세요">Book your stay and experience the tranquility of island life</p>
+    <a href="reserve.html" class="btn-cta" data-en="Book Now" data-ko="지금 예약하기">Book Now</a>
   </div>
 </section>
 
 <!-- Footer -->
 <footer class="footer">
-  <p>&copy; 2024 Gili Sal:EE Guesthouse. Life in Gili.</p>
+  <p>&copy; 2025 Gili Sal:EE Guesthouse. Life in Gili.</p>
 </footer>
 
 <script>
