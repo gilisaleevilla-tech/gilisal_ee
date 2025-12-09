@@ -237,7 +237,7 @@
   .info p {
     line-height: 1.8;
     color: var(--text-light);
-    font-size: 17px;
+    font-size: 15px;
     margin-bottom: 16px;
   }
   
@@ -273,6 +273,13 @@
   .insta:hover {
     background: var(--primary);
     color: white;
+  }
+
+  .insta-icon {
+    width: 18px;    /* 텍스트 높이랑 자연스럽게 맞는 사이즈 */
+    height: 18px;
+    object-fit: contain;
+    display: block;
   }
   
   /* Rooms Section */
@@ -625,7 +632,7 @@
       <img src="asset/logo.png" alt="Gili Sal:EE Logo" class="logo-img">
       <div>
         <div class="logo-text">Gili Sal:EE</div>
-        <div class="logo-sub">LIFE IN GILI</div>
+        <div class="logo-sub">Life in Gili 🌴 Stay & Chill</div>
       </div>
     </a>
     <div class="lang-toggle">
@@ -680,6 +687,7 @@
   <div class="location">📍 Gili Trawangan, Lombok, Indonesia</div>
   <p>
     <a class="insta" href="https://www.instagram.com/gilisal_ee/" target="_blank">
+      <img src="asset/instagram-logo.png" alt="Instagram" class="insta-icon">
       Instagram →
     </a>
   </p>
@@ -748,7 +756,7 @@
 <!-- CTA Section -->
 <section class="cta-section">
   <div class="cta-container">
-    <h2 data-en="Ready for Your Gili Escape?" data-ko="길리에서의 휴식을 준비하셨나요?">Ready for Your Gili Escape?</h2>
+    <h2 style="font-size: 26px;" data-en="Ready for Your Gili Escape?" data-ko="길리에서의 휴식을 준비하셨나요?">Ready for Your Gili Escape?</h2>
     <p data-en="Book your stay and experience the tranquility of island life" data-ko="지금 예약하고 섬에서의 평화로운 시간을 경험하세요">Book your stay and experience the tranquility of island life</p>
     <a href="reserve.html" class="btn-cta" data-en="Booking Inquiry" data-ko="지금 예약 문의하기">Booking Inquiry</a>
   </div>
